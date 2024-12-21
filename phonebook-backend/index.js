@@ -35,10 +35,6 @@ let persons = [
 app.use(morgan('tiny'));
 //app methods
 
-app.get('/', (request, response) => {   
-    response.send('<h1>¿Que haces aquí?</h1>')
-})
-
 app.get('/info', (request, response) => {
     console.log(response)
     response.send(`<p>Phonebook has info for ${persons.length} people</p>
